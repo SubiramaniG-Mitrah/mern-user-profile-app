@@ -13,17 +13,15 @@ const SignUp = () => {
     password: "",
   });
 
-  useEffect(() => {}, []);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await axios.post("http://localhost:3001/auth/signup", formData);
-    console.log(`122 res`, res);
   };
-console.log(`122 formData`,formData);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  
   return (
     <Card>
       <div className="space-y-5 p-5">

@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import PrivateRouter from "./PrivateRouter";
+import PublicRouter from "./PublicRouter";
 
 const AllRoutes = () => {
   return (
-    <div>routes</div>
-  )
-}
+    <Router>
+      <PublicRouter />
+      <PrivateRouter />
+    </Router>
+  );
+};
 
-export default AllRoutes
+export default AllRoutes;
