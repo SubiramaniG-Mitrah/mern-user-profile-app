@@ -12,7 +12,7 @@ app.use(
 );
 
 app.listen(3000, async () => {
-  await mongoose.connect("mongodb+srv://subiramanigm:mongodbpwd%40122%231@cluster0.xliyllz.mongodb.net/?retryWrites=true&w=majority")
+  await mongoose.connect("mongodb+srv://subiramanigm:@cluster0.xliyllz.mongodb.net/?retryWrites=true&w=majority")
   console.log('connected mongoDB')
   console.log("App running in 3000")
 });
